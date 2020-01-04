@@ -8,6 +8,4 @@ php:
 services:
   - mysql 
   
-  language: php
-
 script: ./build.sh
