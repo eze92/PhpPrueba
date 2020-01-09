@@ -1,9 +1,5 @@
 {
-    "autoload": {
-        "classmap": [
-            "vendor/"
-        ]
-    },
+
 	"require-dev": {
         "phpunit/phpunit": "5.7.26"
     }
