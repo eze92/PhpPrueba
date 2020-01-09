@@ -8,7 +8,7 @@ php:
   - 5.6
   - 7.0
   - hhvm
-dist: trusty in .travis.yml
+dist: trusty 
   
 # Commands to be run before your environment runs.
 before_script:
