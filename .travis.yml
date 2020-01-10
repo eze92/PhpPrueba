@@ -5,4 +5,9 @@ php:
  - 7.3
 services:
   - mysql
-
+# Commands to be run before your environment runs.
+install:
+  - composer install
+  - composer dump -o
+# Commands you want to run that will verify your build.
+script: phpunit
