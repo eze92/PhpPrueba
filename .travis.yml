@@ -4,6 +4,11 @@ language: php
 php:
  - 7.3
 services:
+
+before_script:
+- wget http://chromedriver.storage.googleapis.com/2.0/chromedriver_win32.zip
+- export CHROME_BIN=chromium-browser
+
   - mysql
 # Commands to be run before your environment runs.
 install:
