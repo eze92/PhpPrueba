@@ -7,8 +7,6 @@ services:
   - mysql
 # omitting "script:" will default to phpunit
 # use the $DB env variable to determine the phpunit.xml to use
-install:
-- vendor/bin/phpunit
 before_script:
 - wget http://chromedriver.storage.googleapis.com/2.0/chromedriver_win32.zip
 script: phpunit --configuration phpunit.xml --coverage-text
