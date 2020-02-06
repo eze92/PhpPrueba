@@ -5,4 +5,8 @@
     "require": {
         "php-webdriver/webdriver": "^1.7"
     }
+	"vendor-dir": {
+                    "type": "string",
+                    "description": "The location where all packages are installed, defaults to \"vendor\"."
+                },
 }
