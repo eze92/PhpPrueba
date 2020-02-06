@@ -9,9 +9,9 @@
 	<link rel="stylesheet" href="css/normalize.css">
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="jcarousel.basic.css">
+	<link rel="stylesheet" type="text/css" href="css/jcarousel.basic.css">
 
-	 <script type="text/javascript" charset="utf-8" src="animacion_edgePreload.js"></script>
+	 <script type="text/javascript" charset="utf-8" src="js/animacion_edgePreload.js"></script>
 
 	
 	 
@@ -19,8 +19,8 @@
 	
 
 </head>
-<body>
-	<header>
+<body> 
+	<header >
 
 		<div class ="holder">
 			
@@ -59,26 +59,25 @@
 		<div class="holder ">
 			
 	
-			<ul>
+		 <ul>
 				<li><a href="index.php" title="">Home</a></li>
 				<li><a href="#">¿Donde viajo?</a>
-         <ul>
-             <li><a href="provincias.html">Provincias Argentinas </a></li>
-             <li><a href="#">Continentes</a>
-            	<ul>
-             		<li><a href="america.html">América</a></li>
-             		<li><a href="europa.html">Europa</a></li>
-             		<li><a href="asia.html">Asia</a></li>
-             	</ul>
-            </ul>
-        </li>
-        </li>
-				<li><a href="servicios.html" title="">Servicios</a></li>
-				<li><a href="pago.html" title="">Formas de Pago</a></li>
-				<li><a href="contacto.html" title="">Contacto</a></li>
-
-
-			</ul>
+             	<ul>
+             		<li><a href="modelo/provincias.html">Provincias Argentinas </a></li>
+             		<li><a href="#">Continentes</a>
+            			<ul>
+             				<li><a href="vistas/america.html">América</a></li>
+             				<li><a href="vistas/europa.html">Europa</a></li>
+             				<li><a href="vistas/asia.html">Asia</a></li>
+             			</ul>
+        		</ul>
+        			</li>
+        		</li>
+				<li><a href="modelo/servicios.html" title="">Servicios</a></li>
+				<li><a href="modelo/pago.html" title="">Formas de Pago</a></li>				
+			    <li><a href="modelo/agenda.php" title=""> Agenda </a></li>
+			    <li><a href="modelo/contacto.html" title=""> Contacto </a></li>			
+		 </ul>
 		</div>
 
 	</nav>
@@ -139,15 +138,15 @@
 	<footer>
 		<p >
 			Turismo Nacional e interncional 
-			(EVT) Legajo 14.168 Disp 1322/09
-			Avenida Medrano 951 Buenos Aires, Argentina 
-			turismo_nacional_internacional@hotmail.com- Tel. / Fax: +54 11 4867-7500 </p>
+ 			Caseros Buenos Aires Argentina, Valentín Gómez 4772, B1678			
+ 			turismo_nacional_internacional@hotmail.com- Tel. / Fax: +54 11 4575-5012 
+		</p>
 			
-		<p >Copyright 2014 :Diseño y Programación: Ezequiel Ledesma</p>
+		<p >Copyright 2020 :Diseño y Programación: Ezequiel Ledesma</p>
 		
 	</footer>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="js/jquery.cycle2.min.js"></script>
 
 
