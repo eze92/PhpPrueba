@@ -19,7 +19,11 @@ class subirAnecdotaTest extends TestCase
         $desiredCapabilities->setCapability('trustAllSSLCertificates', true);
         $this->webDriver = WebDriver\Remote\RemoteWebDriver::create('http://localhost:4444/wd/hub', $desiredCapabilities);
     }
-
+	
+	/**
+     * Method testProbandoIngresarDatos
+     * @test
+     */
 
     public function subirAnecdota()
     {
