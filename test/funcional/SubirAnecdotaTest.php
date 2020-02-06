@@ -3,7 +3,7 @@ namespace Test;
 
 use PHPUnit\Framework\TestCase;
 use Facebook\WebDriver;
-require_once('vendor/autoload.php');
+//require_once('vendor/autoload.php');
 
 class subirAnecdotaTest extends TestCase
 {
