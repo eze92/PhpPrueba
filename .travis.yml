@@ -4,7 +4,9 @@ language: php
 php:
  - 7.3
 services:
-  - mysql
+ - mysql
+ install:  
+ - "composer install" 
 # omitting "script:" will default to phpunit
 # use the $DB env variable to determine the phpunit.xml to use
 before_script:
