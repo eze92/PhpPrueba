@@ -4,7 +4,7 @@
     },
     "require": {
         "php-webdriver/webdriver": "^1.7"
-    }
+    },
 	 "autoload": {
 			"Test\\":"test/funcional"
         }
