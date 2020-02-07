@@ -10,12 +10,11 @@
    "autoload-dev":{ 
       "psr-4":{ 
          "Facebook\\WebDriver\\":[ 
-            "tests/unit",
-            "tests/functional"
+            "test/funcional"
          ]
       },
       "classmap":[ 
-         "tests/functional/"
+         "test/funcional/"
       ]
    },
    "require-dev":{ 
