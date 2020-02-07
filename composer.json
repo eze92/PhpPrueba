@@ -5,4 +5,18 @@
     "require": {
         "php-webdriver/webdriver": "^1.7"
     }
+	"autoload": {
+    "files": [
+      "lib/Exception/TimeoutException.php"
+    ],
+    "psr-4": {
+      "Facebook\\WebDriver\\": "lib/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Facebook\\WebDriver\\": ["tests/unit", "tests/functional"]
+    },
+    "classmap": ["tests/functional/"]
+  }
 }
