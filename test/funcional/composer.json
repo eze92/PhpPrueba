@@ -1,8 +1,5 @@
 { 
    "autoload":{ 
-      "files":[ 
-         "lib/Exception/TimeoutException.php"
-      ],
       "psr-4":{ 
          "Facebook\\WebDriver\\":"lib/"
       }
