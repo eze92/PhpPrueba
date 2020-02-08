@@ -16,7 +16,6 @@ matrix:
  allow_failures:
    - php: 7.3
    - name: 'Sauce Labs, Chrome 79, OSS protocol'
-     env: SAUCELABS=1 BROWSER_NAME="chrome" VERSION="79.0" PLATFORM="Windows 10" DISABLE_W3C_PROTOCOL="1"  
 before_script:
     - wget http://chromedriver.storage.googleapis.com/2.0/chromedriver_win32.zip
     - "wget https://selenium-release.storage.googleapis.com/3.14/selenium-server-standalone-3.14.0.jar"
