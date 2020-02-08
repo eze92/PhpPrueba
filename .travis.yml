@@ -3,7 +3,7 @@ language: php
 # Versions of PHP you want your project run with.
 php:
  - 7.3
- env:
+  env:
   global:
     - DISPLAY=:99.0
     - BROWSER_NAME="htmlunit"
