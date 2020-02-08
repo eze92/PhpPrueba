@@ -3,6 +3,11 @@ language: php
 # Versions of PHP you want your project run with.
 php:
  - 7.3
+ env:
+  global:
+    - DISPLAY=:99.0
+    - BROWSER_NAME="htmlunit"
+    - SELENIUM_SERVER="https://selenium-release.storage.googleapis.com/3.14/selenium-server-standalone-3.14.0.jar" # Latest version including HtmlUnit
 services:
  - mysql
 install:  
