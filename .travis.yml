@@ -25,4 +25,11 @@ script: phpunit --configuration phpunit.xml --coverage-text
 matrix:
  allow_failures:
    - php: 7.3
+   - name: 'Sauce Labs, Chrome 74, OSS protocol'
+      php: '7.3'
+      env: SAUCELABS=1 BROWSER_NAME="chrome" VERSION="74.0" PLATFORM="Windows 10" DISABLE_W3C_PROTOCOL="1" # 74 is the last version which don't use W3C WebDriver by default
+      before_script:
+        - php -S 127.0.0.1:8000 -t tests/functional/web/ &>>./logs/php-server.log &
+        - until $(echo | nc localhost 8000); do sleep 1; echo waiting for PHP server on port 8000...; done; echo "PHP server started"  
+   
  fast_finish: true
