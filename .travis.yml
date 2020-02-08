@@ -11,7 +11,7 @@ install:
 # use the $DB env variable to determine the phpunit.xml to use
 before_script:
 - wget http://chromedriver.storage.googleapis.com/2.0/chromedriver_win32.zip
-- "wget http://selenium.googlecode.com/files/selenium-server-standalone-2.39.0.jar"
+- wget http://selenium.googlecode.com/files/selenium-server-standalone- 3.141.59.jar
 - "java -jar selenium-server-standalone-2.39.0.jar > /dev/null 2>/dev/null &"
 script: phpunit --configuration phpunit.xml --coverage-text
 # allow_failures: Allow this build to fail under the specified environments.
