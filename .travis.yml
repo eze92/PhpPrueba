@@ -18,7 +18,10 @@ matrix:
    - name: 'Sauce Labs, Chrome 79, OSS protocol'
      env: BROWSER_NAME="chrome" VERSION="79.0" PLATFORM="Windows 10" 
 before_script:
+    - wget https://chromedriver.storage.googleapis.com/78.0.3904.105/chromedriver_win32.zip
     - "wget https://selenium-release.storage.googleapis.com/3.14/selenium-server-standalone-3.14.0.jar"
     - "java -jar selenium-server-standalone-3.14.0.jar > /dev/null 2>/dev/null &"
     - php -S localhost:4444 -t tests/functional/web/ &>>./logs/php-server.log &
     - until $(echo | nc localhost 4444); do sleep 1; echo waiting for PHP server on port 4444...; done; echo "PHP server started"
+    
+    
