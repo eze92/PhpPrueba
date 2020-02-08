@@ -15,10 +15,9 @@ matrix:
  allow_failures:
    - php: 7.3
    - name: 'Sauce Labs, Chrome 74, OSS protocol'
-env: SAUCELABS=1 BROWSER_NAME="chrome" VERSION="74.0" PLATFORM="Windows 10" DISABLE_W3C_PROTOCOL="1" # 74 is the last version which don't use W3C WebDriver by default
 before_script:
     - wget http://chromedriver.storage.googleapis.com/2.0/chromedriver_win32.zip
     - "wget https://selenium-release.storage.googleapis.com/3.14/selenium-server-standalone-3.14.0.jar"
     - "java -jar selenium-server-standalone-3.14.0.jar > /dev/null 2>/dev/null &"
-    - php -S 127.0.0.1:8000 -t tests/functional/web/ &>>./logs/php-server.log &
-    - until $(echo | nc localhost 8000); do sleep 1; echo waiting for PHP server on port 8000...; done; echo "PHP server started"
+    - php -S localhost:4444 -t tests/functional/web/ &>>./logs/php-server.log &
+    - until $(echo | nc localhost 4444); do sleep 1; echo waiting for PHP server on port 4444...; done; echo "PHP server started"
