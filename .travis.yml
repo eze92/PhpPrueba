@@ -12,7 +12,7 @@ services:
 install:  
  - "composer install" 
 matrix:
- allow_failures:
+ include:
    - php: 7.3
    - name: 'Sauce Labs, Chrome 79, OSS protocol'
      env: BROWSER_NAME="chrome" VERSION="79.0" PLATFORM="Windows 10" 
