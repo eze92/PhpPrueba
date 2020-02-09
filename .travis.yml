@@ -19,10 +19,10 @@ matrix:
 before_script:
     - wget https://chromedriver.storage.googleapis.com/79.0.3945.36/chromedriver_win32.zip;
     - unzip chromedriver_win32.zip;
-    - export CHROMEDRIVER_PATH=$PWD/chromedriver/chromedriver; 
     - "wget https://selenium-release.storage.googleapis.com/3.14/selenium-server-standalone-3.14.0.jar"
-    - "java -jar selenium-server-standalone-3.14.0.jar"
-    - php -S localhost:4444 -t tests/functional/web/ &>>./logs/php-server.log &
+    - "java -Dwebdriver.chrome.driver=chromedriver -jar selenium-server-standalone-3.14.0.jar"
     - until $(echo | nc localhost 4444); do sleep 1; echo waiting for PHP server on port 4444...; done; echo "PHP server started"
+    - php -S localhost:4444 -t tests/functional/web/ &>>./logs/php-server.log &
+    - until $(echo | nc localhost 8000); do sleep 1; echo waiting for PHP server on port 8000...; done; echo "PHP server started"
 script: phpunit --configuration phpunit.xml --coverage-text    
     
