@@ -18,10 +18,7 @@ before_script:
     - wget https://chromedriver.storage.googleapis.com/79.0.3945.36/chromedriver_win32.zip;
     - unzip chromedriver_win32.zip;
     - "wget https://selenium-release.storage.googleapis.com/3.14/selenium-server-standalone-3.14.0.jar"
-    fi
-    - export CHROMEDRIVER_PATH=$PWD/chromedriver/chromedriver; fi
-    - wget -q -t 3 -O jar/selenium-server-standalone.jar $SELENIUM_SERVER;
-    fi   
+    - export CHROMEDRIVER_PATH=$PWD/chromedriver/chromedriver; 
     -  java -Dwebdriver.chrome.driver="$PWD/chromedriver/chromedriver"  -jar jar/selenium-server-standalone-3.14.0.jar -log ./logs/selenium.log & 
     - php -S localhost:4444 -t test/funcional/ &>>./logs/php-server.log &
     - until $(echo | nc localhost 4444); do sleep 1; echo waiting for PHP server on port 4444...; done; echo "PHP server started"
