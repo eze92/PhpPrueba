@@ -10,6 +10,7 @@ services:
  - mysql
  - xvfb
  
+ matrix:
 - name: 'Chrome stable on Travis (W3C protocol); no Selenium server' 
   env:
      - BROWSER_NAME="chrome"
