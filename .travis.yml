@@ -11,11 +11,11 @@ services:
  - xvfb
  
  matrix:
-- name: 'Chrome stable on Travis (W3C protocol); no Selenium server' 
-  env:
-     - BROWSER_NAME="chrome"
-     - CHROMEDRIVER="1" 
-        
+# Stable Chrome + Chromedriver (W3C mode) inside Travis environment via Selenium server proxy
+    - name: 'Chrome stable on Travis (W3C protocol); via Selenium server'
+      php: '7.3'
+      env:
+        - BROWSER_NAME="chrome"
 install:  
  - "composer install" 
 script: phpunit --configuration phpunit.xml --coverage-text
