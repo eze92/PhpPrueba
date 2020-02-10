@@ -9,9 +9,12 @@ env:
 services:
  - mysql
  - xvfb
- env:
-        - BROWSER_NAME="chrome"
-        - CHROMEDRIVER="1" 
+ 
+- name: 'Chrome stable on Travis (W3C protocol); no Selenium server' 
+  env:
+     - BROWSER_NAME="chrome"
+     - CHROMEDRIVER="1" 
+        
 install:  
  - "composer install" 
 script: phpunit --configuration phpunit.xml --coverage-text
