@@ -9,6 +9,8 @@ env:
 services:
  - mysql
  - xvfb
+addons:
+  chrome: stable
 install:  
  - "composer install" 
 script: phpunit --configuration phpunit.xml --coverage-text
