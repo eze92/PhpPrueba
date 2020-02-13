@@ -34,7 +34,7 @@ class ProbandoIngresarDatosTest extends TestCase
     {
         $this->webDriver->get('http://turismonacionaleinternacional/index.php');
 		
-		$this->webDriver->findElement(WebDriver\WebDriverBy::linkText('Contacto'))->click();
+		//$this->webDriver->findElement(WebDriver\WebDriverBy::linkText('Contacto'))->click();
 		
         $this->webDriver->findElement(WebDriver\WebDriverBy::id('nombre'))->click();
 		
