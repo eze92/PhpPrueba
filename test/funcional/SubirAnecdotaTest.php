@@ -32,9 +32,9 @@ class subirAnecdotaTest extends TestCase
      
        // $this->webDriver->findElement(WebDriver\WebDriverBy::xpath("//button[@type='button']"))->click();
        
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id("usuario"))->click();
+       // $this->webDriver->findElement(WebDriver\WebDriverBy::id("usuario"))->click();
       
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id("usuario"))->sendKeys("ezequiel");
+       // $this->webDriver->findElement(WebDriver\WebDriverBy::id("usuario"))->sendKeys("ezequiel");
        
         $this->webDriver->findElement(WebDriver\WebDriverBy::name("anecdota"))->click();
    
