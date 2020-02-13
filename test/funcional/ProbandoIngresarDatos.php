@@ -32,7 +32,7 @@ class ProbandoIngresarDatosTest extends TestCase
      */
     public function testProbandoIngresarDatosYMandarEmail()
     {
-        $this->webDriver->get("http://turismonacionaleinternacional/index.php");
+        $this->webDriver->get('http://turismonacionaleinternacional/index.php');
 		
 		$this->webDriver->findElement(WebDriver\WebDriverBy::linkText('Contacto'))->click();
 		
@@ -50,7 +50,7 @@ class ProbandoIngresarDatosTest extends TestCase
 		
         $this->webDriver->findElement(WebDriver\WebDriverBy::id('mensaje'))->click();
 		
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id('mensaje'))->sendKeys("Estoy probando ingresar datos en el formulario");
+        $this->webDriver->findElement(WebDriver\WebDriverBy::id('mensaje'))->sendKeys('Estoy probando ingresar datos en el formulario');
 		
         $this->webDriver->findElement(WebDriver\WebDriverBy::name('submit'))->click();
 		
