@@ -36,9 +36,9 @@ class subirAnecdotaTest extends TestCase
       
        // $this->webDriver->findElement(WebDriver\WebDriverBy::id("usuario"))->sendKeys("ezequiel");
        
-        $this->webDriver->findElement(WebDriver\WebDriverBy::name("anecdota"))->click();
+        $this->webDriver->findElement(WebDriver\WebDriverBy::id("anecdota"))->click();
    
-        $this->webDriver->findElement(WebDriver\WebDriverBy::name("anecdota"))->sendKeys("probando cargar una anecdota");
+        $this->webDriver->findElement(WebDriver\WebDriverBy::id("anecdota"))->sendKeys("probando cargar una anecdota");
      
         $this->webDriver->findElement(WebDriver\WebDriverBy::cssSelector("input[id=\"imagen\"]"))->sendKeys($this->getRutaImagen());
 
