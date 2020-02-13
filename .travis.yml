@@ -23,6 +23,5 @@ before_script:
 - "wget https://selenium-release.storage.googleapis.com/3.14/selenium-server-standalone-3.14.0.jar"
 - "java -Dwebdriver.chrome.driver=chromedriver -jar selenium-server-standalone-3.14.0.jar & "
 -  php -S 127.0.0.1:8000 -t test/funcional/ &>>./logs/php-server.log &
-- until $(echo | nc localhost 8000); do sleep 1; echo waiting for PHP server on port 8000...; done; echo "PHP server started"
 - sleep 30
     
