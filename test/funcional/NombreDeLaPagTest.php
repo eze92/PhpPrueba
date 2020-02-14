@@ -26,11 +26,10 @@ class ProbandoLaPagTest extends TestCase
 		$this->webDriver = WebDriver\Remote\RemoteWebDriver::create('http://localhost:4444/wd/hub', $desiredCapabilities);
 
     }
-	/**
-     * Method testProbandoIngresarDatos
+    /**
+     * Method testprobandoContenidoEncabezadoDeLaPagina
      * @test
      */
-
 	public function probandoContenidoEncabezadoDeLaPagina()
     {
         $this->webDriver->get($this->url);

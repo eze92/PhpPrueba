@@ -30,29 +30,29 @@ class ProbandoIngresarDatosTest extends TestCase
      * Method testProbandoIngresarDatos
      * @test
      */
-    public function testProbandoIngresarDatosYMandarEmail()
+    public function testProbandoIngresarDatos()
     {
-        $this->webDriver->get('http://turismonacionaleinternacional/index.php');
+        $this->webDriver->get("http://turismonacionaleinternacional/index.php");
 		
-		//$this->webDriver->findElement(WebDriver\WebDriverBy::linkText('Contacto'))->click();
+		$this->webDriver->findElement(WebDriver\WebDriverBy::linkText("Contacto"))->click();
 		
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id('nombre'))->click();
+        $this->webDriver->findElement(WebDriver\WebDriverBy::id("nombre"))->click();
 		
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id('nombre'))->sendKeys('Ezequiel');
+        $this->webDriver->findElement(WebDriver\WebDriverBy::id("nombre"))->sendKeys("Ezequiel");
 		
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id('apellido'))->sendKeys('Ledesma');
+        $this->webDriver->findElement(WebDriver\WebDriverBy::id("apellido"))->sendKeys("Ledesma");
 		
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id('email'))->sendKeys('ezequiel.ledesma026@gmail.com');
+        $this->webDriver->findElement(WebDriver\WebDriverBy::id("email"))->sendKeys("ezequiel.ledesma026@gmail.com");
 		
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id('telefono'))->click();
+        $this->webDriver->findElement(WebDriver\WebDriverBy::id("telefono"))->click();
 		
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id('telefono'))->sendKeys('47347866');
+        $this->webDriver->findElement(WebDriver\WebDriverBy::id("telefono"))->sendKeys("47347866");
 		
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id('mensaje'))->click();
+        $this->webDriver->findElement(WebDriver\WebDriverBy::id("mensaje"))->click();
 		
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id('mensaje'))->sendKeys('Estoy probando ingresar datos en el formulario');
+        $this->webDriver->findElement(WebDriver\WebDriverBy::id("mensaje"))->sendKeys("Estoy probando ingresar datos en el formulario");
 		
-        $this->webDriver->findElement(WebDriver\WebDriverBy::name('submit'))->click();
+        $this->webDriver->findElement(WebDriver\WebDriverBy::name("submit"))->click();
 		
 		$this->webDriver->switchTo()->alert()->dismiss();	
 		
