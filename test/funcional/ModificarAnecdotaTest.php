@@ -49,7 +49,7 @@ class ModificarAnecdota extends TestCase
       
         $this->webDriver->findElement(WebDriver\WebDriverBy::cssSelector('input[id=\"imagen\"]'))->sendKeys($this->getRutaImagen());
 
-        $this->webDriver->findElement(WebDriver\WebDriverBy::xpath('//button[@type="submit"]))->click();
+        $this->webDriver->findElement(WebDriver\WebDriverBy::xpath('//button[@type="submit"]'))->click();
 		
 		$this->webDriver->switchTo()->alert()->accept();
    
