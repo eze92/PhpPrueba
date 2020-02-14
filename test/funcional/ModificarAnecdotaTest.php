@@ -39,7 +39,7 @@ class ModificarAnecdota extends TestCase
 
         $this->webDriver->findElement(WebDriver\WebDriverBy::xpath('//button[@type="button"]'))->click();
    
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id('usuario'))->click();
+        $this->webDriver->findElement(WebDriver\WebDriverBy::id("usuario"))->click();
 
         $this->webDriver->findElement(WebDriver\WebDriverBy::id('usuario'))->sendKeys("ezequiel");
      
@@ -61,7 +61,7 @@ class ModificarAnecdota extends TestCase
   
         $this->webDriver->findElement(WebDriver\WebDriverBy::name('anecdota'))->click();
      
-        $this->webDriver->findElement(WebDriver\WebDriverBy::xpath("//form[@action='modificarFuncion.php']"))->click();
+        $this->webDriver->findElement(WebDriver\WebDriverBy::xpath('//form[@action="modificarFuncion.php"]'))->click();
      
         $this->webDriver->findElement(WebDriver\WebDriverBy::name('anecdota'))->sendKeys("actualizo anecdota");
       
