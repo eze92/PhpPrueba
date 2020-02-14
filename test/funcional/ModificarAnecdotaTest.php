@@ -39,7 +39,7 @@ class ModificarAnecdota extends TestCase
 
         $this->webDriver->findElement(WebDriver\WebDriverBy::xpath('//button[@type="button"]'))->click();
    
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id("usuario"))->click();
+        $this->webDriver->findElement(WebDriver\WebDriverBy::id('usuario'))->click();
 
         $this->webDriver->findElement(WebDriver\WebDriverBy::id('usuario'))->sendKeys("ezequiel");
      
@@ -72,6 +72,8 @@ class ModificarAnecdota extends TestCase
 		$this->webDriver->switchTo()->alert()->accept();
 		
 		$this->assertSame('board-361516_1920.jpg',$this->nombreArchivo());
+		
+		echo $this->webDriver->getPageSource();
     }
 	
 	
