@@ -6,7 +6,7 @@ php:
 env:
   global:
     - DISPLAY=:99.0
-    - BROWSER_NAME="http://turismonacionaleinternacional/modelo/agenda.php"
+    - BROWSER_NAME="turismonacionaleinternacional"
     - SELENIUM_SERVER="https://selenium-release.storage.googleapis.com/3.14/selenium-server-standalone-3.14.0.jar" # Latest version including HtmlUnit
 services:
  - mysql
