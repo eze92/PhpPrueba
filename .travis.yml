@@ -18,7 +18,7 @@ install:
 script: phpunit --configuration phpunit.xml --coverage-text
 
 before_script:
-- wget https://chromedriver.storage.googleapis.com/80.0.3987.106/chromedriver_linux64.zip;
+- wget https://chromedriver.storage.googleapis.com/79.0.3945.36/chromedriver_linux64.zip;
 - unzip chromedriver_linux64.zip;
 - "wget https://selenium-release.storage.googleapis.com/3.14/selenium-server-standalone-3.14.0.jar"
 - "java -Dwebdriver.chrome.driver=chromedriver -jar selenium-server-standalone-3.14.0.jar & "
