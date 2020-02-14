@@ -33,7 +33,7 @@ class SubirAnecdotaTest extends TestCase
       
         $this->webDriver->get("http://turismonacionaleinternacional/modelo/agenda.php");
      
-        $this->webDriver->findElement(WebDriver\WebDriverBy::xpath("//button[@type='button']"))->click();
+       // $this->webDriver->findElement(WebDriver\WebDriverBy::xpath("//button[@type='button']"))->click();
        
         $this->webDriver->findElement(WebDriver\WebDriverBy::id("usuario"))->click();
       
@@ -47,7 +47,7 @@ class SubirAnecdotaTest extends TestCase
 
         $this->webDriver->findElement(WebDriver\WebDriverBy::xpath("//button[@type='submit']"))->click();
     
-		$this->webDriver->switchTo()->alert()->dismiss();	
+		$this->webDriver->switchTo()->alert()->accept();	
 
         $this->assertTrue($this->existeArchivo());
 
