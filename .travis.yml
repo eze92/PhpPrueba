@@ -12,7 +12,7 @@ services:
  - mysql
  - xvfb
 addons:
-  chrome: stable
+  chrome: 79
 install:  
  - "composer install" 
 script: phpunit --configuration phpunit.xml --coverage-text
