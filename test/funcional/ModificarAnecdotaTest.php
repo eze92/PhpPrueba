@@ -37,7 +37,7 @@ class ModificarAnecdota extends TestCase
         
         $this->webDriver->get('http://turismonacionaleinternacional/modelo/agenda.php');
 
-        $this->webDriver->findElement(WebDriver\WebDriverBy::xpath('//button[@type="button"]'))->click();
+        $this->webDriver->findElement(WebDriver\WebDriverBy::xpath("//button[@type='button']"))->click();
    
         $this->webDriver->findElement(WebDriver\WebDriverBy::id('usuario'))->click();
 
