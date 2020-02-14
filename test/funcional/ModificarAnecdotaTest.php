@@ -37,37 +37,37 @@ class ModificarAnecdota extends TestCase
         
         $this->webDriver->get("http://turismonacionaleinternacional/modelo/agenda.php");
 
-        //$this->webDriver->findElement(WebDriver\WebDriverBy::xpath("//button[@type='button']"))->click();
+        $this->webDriver->findElement(WebDriver\WebDriverBy::xpath('//button[@type="button"]'))->click();
    
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id("usuario"))->click();
+        $this->webDriver->findElement(WebDriver\WebDriverBy::id('usuario'))->click();
 
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id("usuario"))->sendKeys("ezequiel");
+        $this->webDriver->findElement(WebDriver\WebDriverBy::id('usuario'))->sendKeys("ezequiel");
      
-        $this->webDriver->findElement(WebDriver\WebDriverBy::name("anecdota"))->click();
+        $this->webDriver->findElement(WebDriver\WebDriverBy::name('anecdota'))->click();
      
-        $this->webDriver->findElement(WebDriver\WebDriverBy::name("anecdota"))->sendKeys("agrego primer anecdota");
+        $this->webDriver->findElement(WebDriver\WebDriverBy::name('anecdota'))->sendKeys("agrego primer anecdota");
       
-        $this->webDriver->findElement(WebDriver\WebDriverBy::cssSelector("input[id=\"imagen\"]"))->sendKeys($this->getRutaImagen());
+        $this->webDriver->findElement(WebDriver\WebDriverBy::cssSelector('input[id=\"imagen\"]'))->sendKeys($this->getRutaImagen());
 
         $this->webDriver->findElement(WebDriver\WebDriverBy::xpath("//button[@type='submit']"))->click();
 		
 		$this->webDriver->switchTo()->alert()->accept();
    
-        $this->webDriver->findElement(WebDriver\WebDriverBy::xpath("(//button[@type='button'])[2]"))->click();
+        $this->webDriver->findElement(WebDriver\WebDriverBy::xpath('(//button[@type="button"])[2]'))->click();
   
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id("usuario"))->click();
+        $this->webDriver->findElement(WebDriver\WebDriverBy::id('usuario'))->click();
   
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id("usuario"))->sendKeys("pepe");
+        $this->webDriver->findElement(WebDriver\WebDriverBy::id('usuario'))->sendKeys("pepe");
   
-        $this->webDriver->findElement(WebDriver\WebDriverBy::name("anecdota"))->click();
+        $this->webDriver->findElement(WebDriver\WebDriverBy::name('anecdota'))->click();
      
         $this->webDriver->findElement(WebDriver\WebDriverBy::xpath("//form[@action='modificarFuncion.php']"))->click();
      
-        $this->webDriver->findElement(WebDriver\WebDriverBy::name("anecdota"))->sendKeys("actualizo anecdota");
+        $this->webDriver->findElement(WebDriver\WebDriverBy::name('anecdota'))->sendKeys("actualizo anecdota");
       
-        $this->webDriver->findElement(WebDriver\WebDriverBy::cssSelector("input[id=\"imagen\"]"))->sendKeys($this->getRutaImagen2());
+        $this->webDriver->findElement(WebDriver\WebDriverBy::cssSelector('input[id=\"imagen\"]'))->sendKeys($this->getRutaImagen2());
  
-        $this->webDriver->findElement(WebDriver\WebDriverBy::xpath("//button[@type='submit']"))->click();
+        $this->webDriver->findElement(WebDriver\WebDriverBy::xpath('//button[@type="submit"]'))->click();
 		
 		$this->webDriver->switchTo()->alert()->accept();
 		
