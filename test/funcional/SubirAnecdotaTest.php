@@ -33,7 +33,7 @@ class SubirAnecdotaTest extends TestCase
       
         $this->webDriver->get("http://turismonacionaleinternacional/modelo/agenda.php");
     	
-	echo $this->webDriver->getPageSource()
+	echo $this->webDriver->getPageSource();
 	    	
         $this->webDriver->findElement(WebDriver\WebDriverBy::xpath("//button[@type='button']"))->click();
        
